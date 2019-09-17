@@ -25,3 +25,6 @@ def send_echo(message):
 	bot.send_message(message.chat.id, answer)
 
 bot.polling( none_stop = True )
+
+token = os.environ.get('BOT_TOKEN')
+bot.run(str(token))
